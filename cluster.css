@@ -1,0 +1,128 @@
+.cluster{
+    width: 100vw;
+    height: 52vh;
+    margin-bottom: 10rem;
+}
+
+:root {
+    --mbgcolor: #06396d;
+    --bgcolor: #4f3af4;
+    --textcolor: #FF4729;
+  }
+.main_heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main_heading h1{
+    font-size: 50px;
+    letter-spacing: 30px;
+    color:#707070;
+}
+.shapee h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 10rem;
+    background: var(--textcolor);
+    font-size: 50px;
+    letter-spacing: 30px;
+    font-weight: bolder;
+    font-weight: 800;
+    color:#fff;
+}
+.main_container{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+
+}
+.main_container .card{
+    position: relative;
+    width:33.999rem;
+    height: 27rem;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    
+}
+img{
+    width: 100%;
+}
+.content{
+    padding: -5px 20px;
+    text-align: center;
+    transform: translateY(-300px);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.main_container .card:hover > .content{
+    opacity: 1;
+    transform: translateY(-300px);
+}
+.content h1{
+    color: #fff;
+    font-size: 2.7rem;
+    font-family: Montserrat;
+}
+/* Images Hover Amazing Effect */
+ .card:hover{
+    opacity: 0.8;
+}
+
+
+ @media (max-width:1536px) {
+    .main_container .card{
+        width:33rem;
+    height: 24rem;
+    }
+    
+} 
+@media (max-width:990px) {
+    .main_container{
+        flex-wrap: wrap;
+    }
+    .card1{
+        margin-top: -150px;
+        margin-bottom: 50px;
+    }
+    .card2{
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+/* Responsive */
+@media (max-width:990px)
+{
+    .cluster{
+        margin-bottom: 50rem;
+    }
+    .main_heading h1{
+        font-size: 20px;
+    }
+    .shapee h2{
+        font-size: 30px;
+    }
+
+
+}
+
+@media (max-width:390px) {
+    .main_container .card{
+        position: relative;
+        width:23.999rem;
+        height: 19rem;
+    }
+    .first_dummy{
+       display: none;
+    }
+    .third_dummy{
+        display: none;
+     }
+}
